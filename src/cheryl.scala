@@ -32,6 +32,8 @@ def statement3(date : String) : Boolean = {
   know(whatAlbertNarrowsDownTo.filter(statement2(_)))
 }
 
-val cheryls_birthday = allDates.filter(d => statement1(d) && statement2(d) && statement3(d)).head
+val cheryls_birthday = allDates.filter(d => statement1(d) && statement2(d) && statement3(d))
 
-println(cheryls_birthday)
+println(know(cheryls_birthday))
+
+println(cheryls_birthday.head)
